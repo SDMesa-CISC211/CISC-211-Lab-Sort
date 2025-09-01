@@ -390,7 +390,8 @@ int main ( void )
             "sort tests failed: %ld \r\n"
             "sort total tests:  %ld \r\n"
             "sort score: %ld/%ld points \r\n\r\n"
-            "FINAL SCORE: %ld\r\n\r\n",
+            "FINAL SCORE: %ld\r\n"
+            "FINI!!!!!\r\n\r\n",
             nameStrPtr,
             swapTotalPassCount,
             swapTotalFailCount,
