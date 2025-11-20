@@ -1,12 +1,11 @@
 /*** asmSort.s   ***/
-#include <xc.h>
 .syntax unified
 
-@ Declare the following to be in data memory
+/* Declare the following to be in data memory */
 .data
 .align    
 
-@ Define the globals so that the C code can access them
+/* Define the globals so that the C code can access them */
 /* define and initialize global variables that C can access */
 /* create a string */
 .global nameStr
@@ -22,7 +21,7 @@ nameStr: .asciz "Inigo Montoya"
 .type nameStrPtr,%gnu_unique_object
 nameStrPtr: .word nameStr   /* Assign the mem loc of nameStr to nameStrPtr */
 
-@ Tell the assembler that what follows is in instruction memory    
+/* Tell the assembler that what follows is in instruction memory     */
 .text
 .align
 
@@ -72,6 +71,8 @@ NOTE: definitions: "greater than" means most positive number
 .type asmSwap,%function     
 asmSwap:
 
+    /* REMEMBER TO FOLLOW THE ARM CALLING CONVENTION!            */
+
     /* YOUR asmSwap CODE BELOW THIS LINE! VVVVVVVVVVVVVVVVVVVVV  */
 
 
@@ -109,8 +110,7 @@ NOTE: definitions: "greater than" means most positive number
 .type asmSort,%function
 asmSort:   
 
-    /* Note to Profs: 
-     */
+    /* REMEMBER TO FOLLOW THE ARM CALLING CONVENTION!            */
 
     /* YOUR asmSort CODE BELOW THIS LINE! VVVVVVVVVVVVVVVVVVVVV  */
 
